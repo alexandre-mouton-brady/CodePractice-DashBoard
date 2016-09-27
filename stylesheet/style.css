@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;  
+  font-family: Fira Sans, Sans-Serif;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.application {
+  background: #FFF;
+}
+
+/* Header */
+
+.application__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.application__header--black {
+  background: #333;
+}
+
+/* Header - Logo */
+
+.application__header__logo {
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: #999;
+  display: flex; /* This is a hack */
+}
+
+.application__header__logo--bold {
+  font-weight: 500;
+}
+
+/* Header - Navigation */
+
+.header__navigation ul { /* <= Can I do that ?! */
+  display: flex;
+}
+
+.header__navigation__item {
+  color: #EEE;
+  padding: 1.3rem 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  transition: background 300ms ease-in-out;
+}
+
+.header__navigation__item:hover,
+.header__navigation__item:focus,
+.header__navigation__item:active {
+  background: #222;
+}
+
+.header__navigation__item--flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__navigation__item__profile {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: #EEE;
+  margin: 0 10px;
+}
+
+.header__navigation__item--dropdown:after {
+  content: '';
+  position: relative;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 7px;
+  border-top-color: #EEE;
+  right: 0;
+  top: 50%;
+  margin: 0 10px;
+  transform: translateY(-50%);
+}
+
+/* Sidebar */
+
+/* Sidebar - item */
+
+.sidemenu__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #333;
+}
+
+.sidemenu__item__color {
+  width: 4px;
+  height: 50px
+}
+
+.sidemenu__item__color--red {
+  background: #F22;
+}
+
+.sidemenu__item__color--blue {
+  background: #22F;
+}
+
+.sidemenu__item__color--green {
+  background: #2F2;
+}
+
+.sidemenu__item__color--darkblue {
+  background: #009;
+}
+
+.sidemenu__item__color--yellow {
+  background: #FF3;
+}
+
+.sidemenu__item__color--darkred {
+  background: #900;
+}
+
+.sidemenu__item__color--lightgreen {
+  background: #5F5;
+}
+
+.sidemenu__item__color--lightblack {
+  background: #444;
+}
+
+.sidemenu__item__icon {
+  font-size: 1.5rem;
+  padding: 0 15px;
+  position: relative;
+
+}
+
+.sidemenu__item__icon:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #F22;
+  transition: width 300ms ease-in-out;
+}
+
+.sidemenu__item__icon:hover:before {
+  width: 100%;
+}
+
+
+
+
+
